@@ -13,9 +13,11 @@
 
             textarea.value = prettyJSON;
             code.innerHTML = prettyHTML;
-            button.textarea = textarea;
-            button.suit = suit;
-            button.addEventListener("click", toggle, false);
+            if(button) {
+                button.textarea = textarea;
+                button.suit = suit;
+                button.addEventListener("click", toggle, false);
+            }
         }
     }
 

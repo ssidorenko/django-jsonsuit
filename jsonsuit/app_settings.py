@@ -31,10 +31,3 @@ WIDGET_MEDIA_JS = getattr(settings, 'JSONSUIT_WIDGET_MEDIA_JS', SYNTAX_HIGHLIGHT
 WIDGET_MEDIA_CSS = getattr(settings, 'JSONSUIT_WIDGET_MEDIA_CSS', {
     'all': SYNTAX_HIGHLIGHTER_CSS + ('jsonsuit/css/jsonsuit.css',)
 })
-
-READONLY_WIDGET_MEDIA_JS = getattr(settings, 'JSONSUIT_READONLY_WIDGET_MEDIA_JS', SYNTAX_HIGHLIGHTER_JS + (
-    'jsonsuit/js/readonly-jsonsuit.js',)
-)
-READONLY_WIDGET_MEDIA_CSS = getattr(settings, 'JSONSUIT_READONLY_WIDGET_MEDIA_CSS', {
-    'all': SYNTAX_HIGHLIGHTER_CSS + ('jsonsuit/css/jsonsuit.css',)
-})
